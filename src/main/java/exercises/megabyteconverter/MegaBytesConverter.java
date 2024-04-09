@@ -5,10 +5,10 @@ public class MegaBytesConverter {
     if (kiloBytes < 0){
       System.out.println("Invalid Value");
     } else {
-
-      System.out.println("XX KB = YY MB and ZZ KB");
+      int kbInMb = 1024;
+      int mb = kiloBytes / kbInMb;
+      int reamaningKb = kiloBytes % kbInMb;
+      System.out.println(kiloBytes + " KB = " + mb + " MB and " + reamaningKb + " KB");
     }
-
-
   }
 }
