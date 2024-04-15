@@ -1,20 +1,11 @@
-package exercisestest;
+package exercisestest.speedconvertertest;
 
 import org.junit.Test;
 
-import static exercises.megabyteconverter.MegaBytesConverter.printMegaBytesAndKiloBytes;
-import static exercises.posnegorzero.PosNegOrZero.checkNumber;
 import static exercises.speedconverter.SpeedConverter.printConversion;
 import static exercises.speedconverter.SpeedConverter.toMilesPerHour;
 
-public class TestExercise {
-
-  @Test
-  public void testPosNegOrZero() {
-    checkNumber(0);
-    checkNumber(-1);
-    checkNumber(1);
-  }
+public class SpeedConverterTest {
 
   @Test
   public void speedConverter() {
@@ -32,13 +23,5 @@ public class TestExercise {
     printConversion(-5.6);
     printConversion(25.42);
     printConversion(75.114);
-  }
-
-  @Test
-  public void printMegaByteConverter() {
-    printMegaBytesAndKiloBytes(2500);
-    printMegaBytesAndKiloBytes(-1000);
-    printMegaBytesAndKiloBytes(4500);
-    printMegaBytesAndKiloBytes(60000);
   }
 }
